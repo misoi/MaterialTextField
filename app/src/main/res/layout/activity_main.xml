@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pets.cynthia.materialtextfield.MainActivity"
+    android:background="#3003fa">
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:mtf_image="@drawable/ic_mail_grey600_24dp"
+        android:id="@+id/password"
+        app:mtf_cardCollapsedHeight="4dp"
+        app:mtf_animationDuration="1000"
+        app:mtf_openKeyboardOnFocus="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="#333"
+            android:textColorHint="#666"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+    <com.andexert.library.RippleView
+        android:id="@+id/more"
+        android:layout_width="?android:actionBarSize"
+        android:layout_height="?android:actionBarSize"
+        android:layout_toLeftOf="@+id/more2"
+        android:layout_margin="5dp"
+        rv_centered="true">
+
+    </com.andexert.library.RippleView>
+
+    <ImageView
+        android:layout_width="?android:actionBarSize"
+        android:layout_height="?android:actionBarSize"
+        android:src="@android:drawable/ic_menu_edit"
+        android:padding="10dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/more"
+        android:layout_toEndOf="@+id/more"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp" />
+
+</RelativeLayout>
